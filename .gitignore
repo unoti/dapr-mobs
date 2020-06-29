@@ -1,3 +1,9 @@
+client/DAPR-Wolves/Temp
+client/DAPR-Wolves/Logs
+# These are assets from the Unity Store.
+client/DAPR-Wolves/Assets/FantasyEnvironments
+client/DAPR-Wolves/Assets/Invector-3rdPersonController_LITE
+client/DAPR-Wolves/Library
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
