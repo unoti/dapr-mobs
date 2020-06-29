@@ -1,13 +1,18 @@
 print('Wolf Server 0.1')
 
 import asyncio
+import json
+import pprint
 import websockets
 
 async def hello(websocket, path):
-    name = await websocket.recv()
-    print(f'< {name}')
+    msg_str = await websocket.recv()
+    msg = json.loads(msg_str)
+    pprint.pprint(msg)
+    
+    print(f'< {msg}')
 
-    greeting = f'Hello, {name}!'
+    greeting = f'Hello, {msg}!'
 
     await websocket.send(greeting)
     print(f'> {greeting}')
